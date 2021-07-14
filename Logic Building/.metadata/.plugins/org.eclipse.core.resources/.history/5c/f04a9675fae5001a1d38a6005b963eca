@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+	<display-name>GradleAssign2</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>  
+    <description></description>  
+    <display-name>Library</display-name>  
+    <servlet-name>Library</servlet-name>  
+    <servlet-class>GradleAssign2.GradleAssign2.Library</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>Library</servlet-name>  
+    <url-pattern>/Library</url-pattern>  
+  </servlet-mapping>  
+</web-app>

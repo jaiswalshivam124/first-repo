@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="springbootexample"/>
+<aop-project name="FirstAssignment"/>
+<aop-project name="FourthAssignment"/>
+<aop-project name="SecondAssignmentwithHealth"/>
+</aop-reference-model>

@@ -1,0 +1,21 @@
+package com.wipro.topgear;
+
+import org.apache.commons.lang3.StringUtils;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	String x1="hello";
+    	String x2="hello";
+    	if(StringUtils.equals(x1, x2))
+            System.out.println("x1 and x2 are equal");
+        else
+            System.out.println("x1 and x2 are not equal");
+        System.out.println( "Hello World!" );
+    }
+}

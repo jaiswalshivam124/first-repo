@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.logic.String.java&apos; to &apos;String23.java&apos;&#x0D;&#x0A;- Original project: &apos;Logic&apos;&#x0D;&#x0A;- Original element: &apos;com.logic.String.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.logic.String23.java&apos;" description="Rename compilation unit &apos;String.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.logic{String.java" name="String23.java" references="false" stamp="1625044158639" version="1.0"/>
+</session>

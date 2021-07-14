@@ -1,0 +1,5 @@
+dev_webapp/myapp.properties:
+msg=Hello I am executing in DEV
+itg_webapp/myapp.properties:
+	msg=Hello I am executing in ITG environment
+

@@ -1,0 +1,17 @@
+127.0.0.1 - - [24/Aug/2020:16:08:32 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:08:40 +0530] "GET /topgear/index.jsp HTTP/1.1" 200 228
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:09:10 +0530] "GET /GradleAssign2/Login.html HTTP/1.1" 404 737
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:27:21 +0530] "GET /GradleAssign2/login.html HTTP/1.1" 404 737
+127.0.0.1 - - [24/Aug/2020:16:28:41 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:28:42 +0530] "GET /GradleAssign2/login.html HTTP/1.1" 200 189
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:28:57 +0530] "POST /GradleAssign2/Library HTTP/1.1" 500 3298
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:37:08 +0530] "GET /GradleAssign2/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:37:20 +0530] "POST /GradleAssign2/Library HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:38:18 +0530] "POST /GradleAssign2/Library HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:39:03 +0530] "POST /GradleAssign2/Library HTTP/1.1" 404 682
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:41:00 +0530] "POST /GradleAssign2/Library HTTP/1.1" 404 682
+127.0.0.1 - - [24/Aug/2020:16:41:54 +0530] "GET / HTTP/1.1" 404 709
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:41:55 +0530] "GET /GradleAssign2/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:16:42:08 +0530] "POST /GradleAssign2/Library HTTP/1.1" 500 3424
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:17:06:13 +0530] "GET /GradleAssign2/login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [24/Aug/2020:17:06:33 +0530] "POST /GradleAssign2/Library HTTP/1.1" 404 682

@@ -1,0 +1,93 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wipro</groupId>
+  <artifactId>ideMaven4</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ideMaven4 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+
+  </dependencies>
+   <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env>dev</env>
+            </properties>
+        </profile>
+        <profile>
+            <id>itg</id>
+            <properties>
+                <env>itg</env>
+            </properties>
+        </profile>
+    </profiles>
+  <build>
+    <finalName>ideMaven4</finalName>
+    <!-- Loading all ${} -->
+        <filters>
+            <filter>src/main/env/${env}_webapp/${env}.properties</filter>
+        </filters>
+
+        <!-- Map ${} into resources -->
+        <resources>
+            <resource>
+                <directory>src/main/env</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.properties</include>
+                </includes>
+            </resource>
+        </resources>
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                        <configuration>
+                            <transformers>
+                                <transformer
+                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                    <mainClass>com.wipro.topgear.App</mainClass>
+                                </transformer>
+                            </transformers>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    
+  </build>
+</project>

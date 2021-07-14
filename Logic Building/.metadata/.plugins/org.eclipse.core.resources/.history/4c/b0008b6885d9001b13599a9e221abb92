@@ -1,0 +1,8 @@
+package com.logic;
+
+public class String23 {
+
+	String str = "ABABAABBBABAAABB";
+	
+	
+}
